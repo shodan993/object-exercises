@@ -24,12 +24,13 @@ function transformFirstAndLast(array) {
 
 function transformFirstAndLast(array) {
   //your code here
-  let arrLength = array.length;
-  let newObj = {
-    firstElement: null,
-    lastElement: null
-  };
-  let newObj["firstElement"] = array[0];
-  let newObj["lastElement"] = array[array.length-1];
+  let newObj = {};
+  newObj[array[0]] = array[array.length-1];
   return newObj;
 };
+
+var arrayList = ['Queen', 'Elizabeth', 'Of Hearts', 'Beyonce'];
+var arrayList2 = ['Kevin', 'Bacon', 'Love', 'Hart', 'Costner', 'Spacey']
+
+console.log(transformFirstAndLast(arrayList));
+console.log(transformFirstAndLast(arrayList2));
